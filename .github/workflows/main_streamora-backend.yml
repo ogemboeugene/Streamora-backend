@@ -50,7 +50,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'streamora-backend'
+          app-name: ${{ secrets.AZURE_BACKEND_APP_NAME }}
           slot-name: 'Production'
-          package: server
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11526391D53541C8AEAAD599CD5ACEF3 }}
+          package: node-app
+          publish-profile: ${{ secrets.AZURE_BACKEND_PUBLISH_PROFILE }}
