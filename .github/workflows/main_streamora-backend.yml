@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'streamora-backend'
           slot-name: 'Production'
-          package: node-app
+          package: ./node-app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11526391D53541C8AEAAD599CD5ACEF3 }}
