@@ -45,6 +45,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+          path: ./deploy
       
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -52,5 +53,5 @@ jobs:
         with:
           app-name: 'streamora-backend'
           slot-name: 'Production'
-          package: ./node-app
+          package: ./deploy
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11526391D53541C8AEAAD599CD5ACEF3 }}
