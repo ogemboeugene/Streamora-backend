@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Specific env files
+server/.env
+client/.env.local
+
+# Build output
+/dist
+/build
+client/build/
+server/build/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
+*.lcov
+
+# Misc
+*.swp
+*.swo
+
+# Optional: Ignore database files
+*.sqlite
+*.db
+
+# Optional: Ignore
